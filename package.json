@@ -1,5 +1,5 @@
 {
-  "name": "webpack-sass",
+  "name": "webpack-dev-environment",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -7,18 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["webpack", "sass", "jquery"],
+  "author": "Obi-Bram-Kenobi",
   "license": "ISC",
   "devDependencies": {
-    "extract-text-webpack-plugin": "^3.0.2"
-  },
-  "dependencies": {
+    "extract-text-webpack-plugin": "^3.0.2",
     "css-loader": "^0.28.7",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "webpack": "^3.9.1",
-    "webpack-dev-server": "^2.9.7",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
     "jquery": "^3.2.1"
   }
 }
