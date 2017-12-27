@@ -12,7 +12,7 @@ npm install webpack-dev-server -g
 nmp install
 
 3. Run webpack and the webpack development server based on the configs in webpack.config.js
-webpack
+webpack-dev-server
 
 4. Open the project directory in your editor and change the 'entry' scss and js files indicated in webpack.config.js.
 After saving a file, webpack updates the relevant 'output' files in the /dist directory accordingly.
