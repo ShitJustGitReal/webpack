@@ -1,7 +1,7 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: ['./app.js', './scss/main.scss', './css/plain_css.css'],
+  entry: ['./node_modules/jquery/dist/jquery.slim.min.js', './app.js', './scss/main.scss', './css/plain_css.css'],
   output: {
     filename: 'dist/bundle.js'
   },
@@ -23,7 +23,12 @@ module.exports = {
       { // css / sass / scss loader for webpack
         test: /\.(css|sass|scss)$/,
         use: ExtractTextPlugin.extract({
-          use: ['css-loader', 'sass-loader'],
+          use: [{
+            loader: 'css-loader',
+            options: {
+              minimize: true
+            }
+          }, 'sass-loader'],
         })
       }
     ]
@@ -35,4 +40,3 @@ module.exports = {
     }),
   ],
 };
-
