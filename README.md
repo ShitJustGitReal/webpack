@@ -4,7 +4,8 @@ http://timrijkse.nl/compiling-sass-with-webpack/
 https://jonathanmh.com/webpack-sass-scss-compiling-separate-file/
 https://stackoverflow.com/questions/31945763/how-to-tell-webpack-dev-server-to-serve-index-html-for-any-route 
 
-1. First install webpack and the webpack dev-server globally to make its commands available at the command line (I used Git bash as command line tool because in Windows it's easy to open git bash in a project directory):
+1. First install webpack and the webpack dev-server globally to make its commands available at the command line
+(in Visual Studio code there's a terminal window available on the bottom-right, automatically starting in the project folder's root):
 npm install webpack -g
 npm install webpack-dev-server -g
 
