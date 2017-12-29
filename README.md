@@ -1,6 +1,8 @@
 
 Sources and credits for this example project are:
+https://docs.npmjs.com/cli/install
 https://webpack.academy/p/the-core-concepts
+https://webpack.js.org/plugins/provide-plugin/
 http://timrijkse.nl/compiling-sass-with-webpack/ 
 https://jonathanmh.com/webpack-sass-scss-compiling-separate-file/
 https://stackoverflow.com/questions/31945763/how-to-tell-webpack-dev-server-to-serve-index-html-for-any-route
