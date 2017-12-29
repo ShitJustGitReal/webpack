@@ -1,8 +1,12 @@
 
 Sources and credits for this example project are:
+https://webpack.academy/p/the-core-concepts
 http://timrijkse.nl/compiling-sass-with-webpack/ 
 https://jonathanmh.com/webpack-sass-scss-compiling-separate-file/
-https://stackoverflow.com/questions/31945763/how-to-tell-webpack-dev-server-to-serve-index-html-for-any-route 
+https://stackoverflow.com/questions/31945763/how-to-tell-webpack-dev-server-to-serve-index-html-for-any-route
+https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579 
+https://github.com/webpack-contrib/uglifyjs-webpack-plugin
+
 
 1. First install webpack and the webpack dev-server globally to make its commands available at the command line
 (in Visual Studio code there's a terminal window available on the bottom-right, automatically starting in the project folder's root):
