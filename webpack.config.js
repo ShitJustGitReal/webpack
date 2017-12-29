@@ -1,4 +1,5 @@
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -37,8 +38,11 @@ module.exports = {
     ]
   },
   plugins: [
+    // Indicate the production environment to ensure development and test artefacts are not packed as part of the bundle
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"production"'
+    }),
     new UglifyJsPlugin(),
-    // Indicating the right environment to ensure development and test artefacts are not packed as part of the bundle
     new ExtractTextPlugin({ // define where to save the file
       filename: 'dist/[name].bundle.css',
       allChunks: true,
