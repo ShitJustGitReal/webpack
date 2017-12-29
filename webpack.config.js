@@ -42,6 +42,8 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
+    // more extensive progress reports in console terminal
+    new webpack.ProgressPlugin(),
     new UglifyJsPlugin(),
     new ExtractTextPlugin({ // define where to save the file
       filename: 'dist/[name].bundle.css',
