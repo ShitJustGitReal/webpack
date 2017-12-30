@@ -6,3 +6,11 @@ body {
         color: rgb(236, 5, 5);
     }
 }
+
+.imgContainer {
+    border: 1px solid black;
+    max-width: 500px;
+    height: 350px;
+    background-image: url("/images/grumpy.jpg?size=500");
+    background-repeat: no-repeat;
+}
