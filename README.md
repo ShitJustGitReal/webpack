@@ -23,3 +23,6 @@ webpack-dev-server
 
 4. Open the project directory in your editor and change the 'entry' scss and js files indicated in webpack.config.js.
 After saving a file, webpack updates the relevant 'output' files in the /dist directory accordingly.
+
+5. After assuring it's working fine with the files in the cache of the dev server, build the output files (without running this command, the files will not show up in the dist folder):
+webpack
