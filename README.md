@@ -8,7 +8,8 @@ https://jonathanmh.com/webpack-sass-scss-compiling-separate-file/
 https://stackoverflow.com/questions/31945763/how-to-tell-webpack-dev-server-to-serve-index-html-for-any-route
 https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579 
 https://github.com/webpack-contrib/uglifyjs-webpack-plugin
-
+https://survivejs.com/webpack/loading/images/
+https://medium.com/a-beginners-guide-for-webpack-2/copy-all-images-files-to-a-folder-using-copy-webpack-plugin-7c8cf2de7676
 
 1. First install webpack and the webpack dev-server globally to make its commands available at the command line
 (in Visual Studio code there's a terminal window available on the bottom-right, automatically starting in the project folder's root):
