@@ -43,30 +43,31 @@ module.exports = {
     ]
   },
   plugins: [
-    // declare jquery as a plugin
+    // declare jquery as a plugin, else functions that require $ will given an 'undefined' error
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
     }),
-    // Indicate the production environment to ensure development and test artefacts are not packed as part of the bundle
+    // indicate the production environment to ensure development and test artefacts are not packed as part of the bundle
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
     // more extensive progress reports in console terminal
     new webpack.ProgressPlugin(),
-    // minify JavaScript files
-    new UglifyJsPlugin(),
-    // minify files to gzip
+    // minify JavaScript files but still building a sourcemap file as well for debugging
+    new UglifyJsPlugin({
+      sourceMap: true,
+    }),
+    // define where the ExtractTextPlugin saves the CSS output file
+    new ExtractTextPlugin({
+      filename: 'dist/[name].bundle.css',
+      allChunks: true,
+    }),
+    // build compressed gzip files as well
     new CompressionPlugin({
       asset: "[path].gz[query]",
       algorithm: "gzip",
       test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
-      minRatio: 0,
-    }),
-    new ExtractTextPlugin({ // define where to save the CSS output file
-      filename: 'dist/[name].bundle.css',
-      allChunks: true,
-    }),
+    })
   ],
 };
